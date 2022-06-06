@@ -80,9 +80,16 @@ function toDashCase(string) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-    
-
+// if else statment comparing the first character in input string with the character in char string
+// charAt(0) to access first character of string
+// toLowerCase insuring that both characters are, in fact, the same case
+    if (string.charAt(0).toLowerCase() === char.toLowerCase()) {
+        // return true if letters match
+        return true;
+    } else {
+        // return false if letters do not match 
+        return false;
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -100,6 +107,16 @@ function beginsWith(string, char) {
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
+    // if else statment comparing the last character in input string with the character in char string
+// charAt(.length - 1) to access last character of string
+// toLowerCase insuring that both characters are, in fact, the same case
+if (string.charAt(string.length - 1).toLowerCase() === char.toLowerCase()) {
+    // return true if letters match
+    return true;
+} else {
+    // return false if letters do not match 
+    return false;
+}
 
 
 
@@ -113,8 +130,9 @@ function endsWith(string, char) {
  */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+// return strings concatenated into one string
 
-
+return stringOne + stringTwo;
 
     // YOUR CODE ABOVE HERE //
 }
@@ -132,7 +150,7 @@ function concat(stringOne, stringTwo) {
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-
+    return args.join("");
 
     // YOUR CODE ABOVE HERE //
 }
