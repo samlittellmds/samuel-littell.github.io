@@ -25,7 +25,8 @@ return string.length;
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
 
-
+    // return input string with all lowercase letters
+return string.toLowerCase();
 
     // YOUR CODE ABOVE HERE //
 }
@@ -35,8 +36,9 @@ function toLowerCase(string) {
  */
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
+    
+    // return input string with all uppercase letters
+return string.toUpperCase();
 
     // YOUR CODE ABOVE HERE //
 }
@@ -57,7 +59,9 @@ function toUpperCase(string) {
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
 
-
+    // need to return an output where the parameter string is lowercased and dashed.
+   return string.replace(/\s+/g, '-').toLowerCase();
+   
 
     // YOUR CODE ABOVE HERE //
 }
